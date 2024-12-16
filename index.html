@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .content {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .read-more {
+            display: none;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>
+            Bu yerda qisqacha matn ko'rsatiladi. O'quvchi qiziqsa, to'liq matnni o'qishi mumkin.
+            <span class="read-more" id="more">Bu yerda to'liq matn ko'rsatiladi. Ushbu qisqa matnning davomi sizning xabarlaringizni uzaytiradi va foydalanuvchilar uchun qo'shimcha ma'lumot beradi.</span>
+        </p>
+        <a onclick="document.getElementById('more').style.display='inline'; this.style.display='none';">
+            Read More
+        </a>
+    </div>
+</body>
+</html>
